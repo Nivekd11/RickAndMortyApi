@@ -1,0 +1,15 @@
+<div class="search-container">
+    <h1>Api Rick and Morty</h1>
+    <label for="">Busca un personaje:</label>
+    <input type="text" [(ngModel)]="characterName" name="characterName"(input)="searchCharacter()">
+    <div class="contenedor-grid">
+        <ng-container *ngIf="data$ |async as characters">
+            <div class="character-container" *ngFor="let character of characters">
+                <img [src]="character.img" alt="">
+                <p>{{character.name}}</p>
+            </div>
+        </ng-container>
+        
+        
+    </div>
+</div>

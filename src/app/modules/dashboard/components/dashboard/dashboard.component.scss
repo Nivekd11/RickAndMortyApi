@@ -1,0 +1,23 @@
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .contenedor-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 2rem;
+        .character-container{
+            margin: auto;
+            
+        }
+    }
+
+    
+   
+}
+
+

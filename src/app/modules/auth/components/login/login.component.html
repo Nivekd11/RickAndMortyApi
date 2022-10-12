@@ -1,0 +1,11 @@
+
+<div class="contenedor-login">
+    <h1>Api Rick and Morty</h1>
+    <form class="form" [formGroup]="form" (submit)="onSubmit()">
+        <label for="">Username:</label>
+        <input type="text" name="username" formControlName="username" value="nivek">
+        <label for="">Password:</label>
+        <input type="text" name="password" formControlName="password" value="nivek">
+        <input type="submit" value="enviar">
+    </form>
+</div>
